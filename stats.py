@@ -1,10 +1,12 @@
 def get_word_count(text):
+    """Gets the count of the amount of words in the book"""
     book_list = text.split()
     word_count = len(book_list)
     return word_count
 
 
 def get_letter_count(text):
+    """Gets the count of the individual letters"""
     letter_list = list(text)
     dict_letter = {}
 
@@ -19,6 +21,7 @@ def get_letter_count(text):
 
 
 def logic_sort(items):
+    """Sorts the logic to a list of characters and numbers, sorted from biggest to largest"""
     word_dict_list = []
 
     for item in items:
